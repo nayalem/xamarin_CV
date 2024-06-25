@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CVApp"
+             x:Class="CVApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Estilos personalizados -->
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#333333" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+            <Style x:Key="SubtitleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#666666" />
+            </Style>
+            <Style x:Key="SectionLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#008080" />
+                <Setter Property="Margin" Value="0,10,0,5" />
+            </Style>
+            <Style x:Key="NormalLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="#333333" />
+                <Setter Property="Margin" Value="0,5,0,5" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <!-- Imagen -->
+                <Image Source="foto.jpg" Aspect="AspectFill" HeightRequest="200" />
+
+                <!-- Información Personal -->
+                <Label Text="Nayalem Karim Arune Chahua" Style="{StaticResource TitleLabelStyle}" />
+                <Label Text="Software Developer" Style="{StaticResource NormalLabelStyle}" />
+                <Label Text="Peruana" Style="{StaticResource NormalLabelStyle}" />
+                <Label Text="Idiomas: Español, Inglés" Style="{StaticResource NormalLabelStyle}" />
+
+                <!-- Información de Contacto -->
+                <Label Text="+51 125 856 890" Style="{StaticResource NormalLabelStyle}" />
+
+                <!-- Sección de Experiencia Laboral -->
+                <Label Text="Experiencia Laboral" Style="{StaticResource SectionLabelStyle}" />
+                <StackLayout>
+                    <Label Text="Software Engineer at ABC Corp" Style="{StaticResource SubtitleLabelStyle}" />
+                    <Label Text="Junio 2024 - Presente" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• Desarrollo de aplicaciones móviles utilizando Xamarin.Forms." Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• Implementación de RESTful APIs y servicios backend." Style="{StaticResource NormalLabelStyle}" />
+
+                    <Label Text="Junior Developer at XYZ Inc" Style="{StaticResource SubtitleLabelStyle}" />
+                    <Label Text="Junio 2018 - Diciembre 2019" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• Soporte y mantenimiento de aplicaciones web." Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• Participación en la implementación de nuevas funcionalidades." Style="{StaticResource NormalLabelStyle}" />
+                </StackLayout>
+
+                <!-- Sección de Educación -->
+                <Label Text="Educación" Style="{StaticResource SectionLabelStyle}" />
+                <StackLayout>
+                    <Label Text="Computer Science " Style="{StaticResource SubtitleLabelStyle}" />
+                    <Label Text="Universidad San Pablo, 2014 - 2018" Style="{StaticResource NormalLabelStyle}" />
+                </StackLayout>
+
+                <!-- Sección de Habilidades -->
+                <Label Text="Habilidades" Style="{StaticResource SectionLabelStyle}" />
+                <StackLayout>
+                    <Label Text="• Desarrollo en C#" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• Xamarin.Forms" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• .NET Core" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• RESTful APIs" Style="{StaticResource NormalLabelStyle}" />
+                    <Label Text="• SQL y bases de datos" Style="{StaticResource NormalLabelStyle}" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
+
+
+
+
+
